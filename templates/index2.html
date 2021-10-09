@@ -1,0 +1,20 @@
+{% block body %}
+
+<body style="text-align: center;border: 1px solid gray; padding: 2px; margin: 50px;">
+<h3 style="text-align: center;">Receiver's phone number</h3>
+<div id="box">
+ <img src="{{url_for('static', filename='logo.png')}}" alt="FlexiGift" width="40" height="40"><br>
+       <h8>we will contact them for the delivery info</h8>
+        <form action="https://www.myflexigift.com/standby.html#/" method="post">
+            <label for="phone"></label>
+            <br>
+            <input type="text" name="phone" id="phone" pattern="[+]{1}[0-9]{1,2}[0-9]{3}[0-9]{3}[0-9]{4}">
+            <br><br>
+            <small>Format: +1xxxxxxxxxx (No spaces in between)</small><br><br>
+            <input style="background-color:black; color:white;" type="submit">      
+
+        </form>    
+    </div>
+</body>
+
+{% endblock %}
